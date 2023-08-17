@@ -1,0 +1,9 @@
+# This is a boilerplate parameters config generated for pipeline 'data_science'
+# using Kedro 0.18.12.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.18.12/kedro_project_setup/configuration.html#parameters
+model_options:
+  columns_to_predict: ["total_overs","total_wickets"]
+  Lag: 1
+  smoothing_type: add
