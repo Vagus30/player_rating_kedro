@@ -1,4 +1,4 @@
-# PSI
+# Player Rating and Forecasting
 
 ## Overview
 
