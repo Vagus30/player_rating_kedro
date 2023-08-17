@@ -4,3 +4,5 @@ data/01_raw/formatted_bbb.csv filter=lfs diff=lfs merge=lfs -text
 data/ filter=lfs diff=lfs merge=lfs -text
 data01_raw/ filter=lfs diff=lfs merge=lfs -text
 data/01_raw/ filter=lfs diff=lfs merge=lfs -text
+data/02_intermediate/ filter=lfs diff=lfs merge=lfs -text
+data/07_model_output/ filter=lfs diff=lfs merge=lfs -text
