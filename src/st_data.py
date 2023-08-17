@@ -40,35 +40,35 @@ def catalog_load_dataset_data(name):
     return df_data
 class MyDataCatalog(DataCatalog):
     def load_all_data(self) -> pd.DataFrame:
-            merged_df = CSVDataSet(filepath="/data/02_intermediate/processed_merged_df.csv")
+            merged_df = CSVDataSet(filepath="./data/02_intermediate/processed_merged_df.csv")
             self.add('merged_df', merged_df)
             df_data: pd.DataFrame = self.load('merged_df')
             return df_data
         
     def load_batsman_data(self) -> pd.DataFrame:
             # COMMENT: Data loading code written by ChatGPT was incorrect
-            batsman_df = CSVDataSet(filepath="/data/02_intermediate/batsman_df_1.csv", load_args=None, save_args={'index': False})
+            batsman_df = CSVDataSet(filepath="./data/02_intermediate/batsman_df_1.csv", load_args=None, save_args={'index': False})
             self.add('batsman_df_1', batsman_df)
             df_data: pd.DataFrame = self.load('batsman_df_1')
             return df_data
         
     def load_bowler_data(self) -> pd.DataFrame:
             # COMMENT: Data loading code written by ChatGPT was incorrect
-            bowler_df = CSVDataSet(filepath="/data/02_intermediate/bowler_df_1.csv", load_args=None, save_args={'index': False})
+            bowler_df = CSVDataSet(filepath="./data/02_intermediate/bowler_df_1.csv", load_args=None, save_args={'index': False})
             self.add('bowler_df_1', bowler_df)
             df_data: pd.DataFrame = self.load('bowler_df_1')
             return df_data
         
     def load_bowler_forecasting_data(self) -> pd.DataFrame:
                 # COMMENT: Data loading code written by ChatGPT was incorrect
-            predicted_bowl = CSVDataSet(filepath="/data/07_model_output/prediction_bowl.csv", load_args=None, save_args={'index': False})
+            predicted_bowl = CSVDataSet(filepath="./data/07_model_output/prediction_bowl.csv", load_args=None, save_args={'index': False})
             self.add('predicted_bowl', predicted_bowl)
             df_data: pd.DataFrame = self.load('predicted_bowl')
             return df_data
             
     def load_batsman_forecasting_data(self) -> pd.DataFrame:
                 # COMMENT: Data loading code written by ChatGPT was incorrect
-            predicted_bat = CSVDataSet(filepath="/data/07_model_output/prediction_bat.csv", load_args=None, save_args={'index': False})
+            predicted_bat = CSVDataSet(filepath="./data/07_model_output/prediction_bat.csv", load_args=None, save_args={'index': False})
             self.add('predicted_bat', predicted_bat)
             df_data: pd.DataFrame = self.load('predicted_bat')
             return df_data
