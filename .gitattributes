@@ -1,0 +1,2 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+data/01_raw/formatted_bbb_df.csv filter=lfs diff=lfs merge=lfs -text
