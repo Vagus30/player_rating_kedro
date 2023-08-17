@@ -1,5 +1,8 @@
 # Player Rating and Forecasting
 
+You can use the streamlit app from here 
+https://player-rating-kedro.streamlit.app/
+
 ## Overview
 
 This is your new Kedro project, which was generated using `kedro 0.18.12`.
