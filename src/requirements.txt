@@ -16,3 +16,4 @@ kedro[pandas.CSVDataSet, pandas.ExcelDataSet, pandas.ParquetDataSet]   # Specify
 kedro-viz~=5.0                                                                 # Visualise your pipelines
 scikit-learn~=1.0 
 streamlit
+matplotlib
